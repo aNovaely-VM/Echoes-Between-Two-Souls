@@ -1,5 +1,5 @@
 # Echoes-Between-Two-Souls
-Jeu de coop réalisé avec @githubname;
+Jeu de coop réalisé avec githubname
 
 Echoes Between Two Souls
 
