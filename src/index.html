@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echoes Between Two Souls</title>
+  <style>
+    /* Reset complet - le canvas prend TOUT l'espace */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+      /* Desactive la selection de texte (c'est un jeu, pas une page web) */
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    #game {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      /* Centre le canvas via flexbox */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Style du message de chargement */
+    #loading {
+      color: #666;
+      font-family: monospace;
+      font-size: 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <!-- Container du jeu - le canvas PixiJS sera injecte ici -->
+  <div id="game">
+    <div id="loading">Chargement...</div>
+  </div>
+
+  <!-- Point d'entree TypeScript (Vite le compile automatiquement) -->
+  <script type="module" src="/main.ts"></script>
+</body>
+</html>
