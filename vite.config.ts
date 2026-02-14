@@ -1,5 +1,9 @@
 import { defineConfig } from 'vite'
-import { resolve } from 'path'
+import { resolve, dirname } from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 // Electron plugins are only loaded when building for Electron
 // In dev mode (browser), we skip them so the game runs in the browser too
@@ -14,7 +18,7 @@ export default defineConfig(async () => {
     plugins.push(
       electron.default([
         {
-          entry: 'electron/main.ts',
+          entry: resolve(__dirname, 'electron/main.ts'),
           vite: {
             build: {
               outDir: 'dist-electron',
@@ -25,7 +29,7 @@ export default defineConfig(async () => {
           },
         },
         {
-          entry: 'electron/preload.ts',
+          entry: resolve(__dirname, 'electron/preload.ts'),
           onstart(args) {
             args.reload()
           },
