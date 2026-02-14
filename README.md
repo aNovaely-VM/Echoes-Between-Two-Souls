@@ -27,7 +27,7 @@ Les deux roles
   - Stabilisation des anomalies
   - Scan et analyse environnementale
   - Support stratégique
-Certaines mécaniques, boss et zones exigent une coordination précise entre les deux rôles.
+  - Certaines mécaniques, boss et zones exigent une coordination précise entre les deux rôles.
 
 Monde & Exploration
 
