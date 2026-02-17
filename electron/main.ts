@@ -11,10 +11,8 @@ function createWindow(): BrowserWindow {
     title: 'Echoes Between Two Souls',
     autoHideMenuBar: true,
     resizable: false,
-
-
+    webPreferences: {
       preload: join(__dirname, 'preload.js'),
-      
       nodeIntegration: false,
       contextIsolation: true,
     },
