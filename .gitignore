@@ -1,0 +1,28 @@
+#dependances
+node_modules/
+
+# build
+dist/
+dist-elecrton/
+
+#fichiers systemes
+.DS_Store
+Thumbs.db
+
+
+#editeurs
+.vscode/settings.json
+*.swp
+*.swo
+
+#Electron
+release/
+
+#environnement
+
+.env
+.env.local
+
+
+#Steam
+steam_appid.txt

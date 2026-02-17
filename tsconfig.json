@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "paths": {
+      "@engine/*": ["src/game/engine/*"],
+      "@systems/*": ["src/game/systems/*"],
+      "@entities/*": ["src/game/entities/*"],
+      "@world/*": ["src/game/world/*"],
+      "@combat/*": ["src/game/combat/*"],
+      "@ui/*": ["src/game/ui/*"],
+      "@utils/*": ["src/utils/*"],
+      "@scenes/*": ["src/game/scenes/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "electron/**/*.ts"],
+  "exclude": ["node_modules", "dist", "dist-electron"]
+}
