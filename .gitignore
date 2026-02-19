@@ -1,0 +1,25 @@
+# Dependances
+node_modules/
+
+# Build
+dist/
+dist-electron/
+
+# Fichiers systeme
+.DS_Store
+Thumbs.db
+
+# Editeur
+.vscode/settings.json
+*.swp
+*.swo
+
+# Electron
+release/
+
+# Environnement
+.env
+.env.local
+
+# Steam (ne pas partager votre appid en public si c'est un vrai projet)
+steam_appid.txt
